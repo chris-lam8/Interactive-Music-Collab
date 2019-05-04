@@ -4,8 +4,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #47097c;
-  padding: 3.2em;
+    background-attachment: fixed;
+  color: #445877;
+  padding: 3em;
   line-height: 1.5em;
   letter-spacing: 0.5px;
   text-align: justify;
@@ -17,35 +18,50 @@ body {
 h1 {
   letter-spacing: 0.1em;
   line-height: 2.1em;
-  color: #47097c;
+  color: #445877;
+  border-bottom: 2px solid #000;
   font-family: 'Gugi', cursive;
   text-align: center;
   font-size: 4em;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
 .button {
-  width: 11em;
-  font-size: 1.2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  background-color: transparent;
-  margin: 2em 0em 2em 0em;
-  color: #47097c;
+  width: 14em;
+  background: #333;
+  border: 2px solid;
+  border-radius: 10;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+  height: 45px;
+/*  font-weight: 300;*/
+  line-height: 45px;
+  padding: 0 20px;
+  text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: #000;
-  border: 2px solid #fff;
-  letter-spacing: 0.3em;
-  transition: all 3s ease 2s;
+  background-color: #c4c4c4;
+  color: #000;
 }
 
 a {
-  color: #47097c;
+  color: #fff;
   text-decoration: none;
 }
+
 a:hover {
-  color: #fff;
+  color: #000;
+   -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 h2 {
