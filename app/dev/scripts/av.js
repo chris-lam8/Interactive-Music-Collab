@@ -2,6 +2,29 @@ window.onload = function() {
 
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
+  let recorder, soundFile, font;
+  var button1;
+  var button2;
+  var button3;
+  var button4;
+  var button5;
+  var button6;
+  var button7;
+  var button8;
+  var button9;
+  var button10;
+  var button11;
+  var button12;
+  var button13;
+  var button14;
+  var button15;
+  var button16;
+  var button17;
+  var button18;
+  var button19;
+  var button20;
+  var button21;
+  var button22;
 
   file.onchange = function() {
     var files = this.files;
