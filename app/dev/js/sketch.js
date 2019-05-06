@@ -24,28 +24,28 @@ var button22;
 
 
 function preload() {
-  snare1 = loadSound('snare1.wav');
-  snare2 = loadSound('snare1.wav');
-  snare3 = loadSound('snare3.wav');
-  loop1 = loadSound('loop1.wav');
-  loop2 = loadSound('loop2.wav');
-  loop3 = loadSound('loop3.wav');
-  kick1 = loadSound('kick1.wav');
-  kick2 = loadSound('kick2.wav');
-  kick3 = loadSound('kick3.wav');
-  hatz1 = loadSound('hatz1.wav');
-  hatz2 = loadSound('hatz2.wav');
-  hatz3 = loadSound('hatz3.wav');
-  cymbz1 = loadSound('cymbalz1.wav');
-  cymbz2 = loadSound('cymbalz2.wav');
-  cymbz3 = loadSound('cymbalz3.wav');
-  crash1 = loadSound('crash1.wav');
-  crash2 = loadSound('crash2.wav');
-  crash3 = loadSound('crash3.wav');
-  eight0eight1 = loadSound('8081.wav');
-  eight0eight2 = loadSound('8082.wav');
-  eight0eight3 = loadSound('8083.wav');
-  font = loadFont("dosis.ttf");
+  snare1 = loadSound('assets/snare1.wav');
+  snare2 = loadSound('assets/snare1.wav');
+  snare3 = loadSound('assets/snare3.wav');
+  loop1 = loadSound('assets/loop1.wav');
+  loop2 = loadSound('assets/loop2.wav');
+  loop3 = loadSound('assets/loop3.wav');
+  kick1 = loadSound('assets/kick1.wav');
+  kick2 = loadSound('assets/kick2.wav');
+  kick3 = loadSound('assets/kick3.wav');
+  hatz1 = loadSound('assets/hatz1.wav');
+  hatz2 = loadSound('assets/hatz2.wav');
+  hatz3 = loadSound('assets/hatz3.wav');
+  cymbz1 = loadSound('assets/cymbalz1.wav');
+  cymbz2 = loadSound('assets/cymbalz2.wav');
+  cymbz3 = loadSound('assets/cymbalz3.wav');
+  crash1 = loadSound('assets/crash1.wav');
+  crash2 = loadSound('assets/crash2.wav');
+  crash3 = loadSound('assets/crash3.wav');
+  eight0eight1 = loadSound('assets/8081.wav');
+  eight0eight2 = loadSound('assets/8082.wav');
+  eight0eight3 = loadSound('assets/8083.wav');
+  font = loadFont("assets/dosis.ttf");
 
 }
 
