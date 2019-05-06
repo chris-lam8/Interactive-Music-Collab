@@ -37,6 +37,8 @@ window.onload = function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     var ctx = canvas.getContext("2d");
+    var img1 = new Image();
+    img1.src = "images/try2.jpg";
     src.connect(analyser);
     analyser.connect(context.destination);
     analyser.fftSize = 256;
@@ -53,7 +55,8 @@ window.onload = function () {
       requestAnimationFrame(renderFrame);
       x = 0;
       analyser.getByteFrequencyData(dataArray);
-      ctx.fillStyle = "#000";
+      pattern1 = ctx.createPattern(img1, 'repeat');
+      ctx.fillStyle = pattern1;
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (var i = 0; i < bufferLength; i++) {
