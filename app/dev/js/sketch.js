@@ -24,27 +24,27 @@ var button22;
 
 
 function preload() {
-  snare1 = loadSound('assets/snare1.wav');
-  snare2 = loadSound('assets/snare1.wav');
-  snare3 = loadSound('assets/snare3.wav');
-  loop1 = loadSound('assets/loop1.wav');
-  loop2 = loadSound('assets/loop2.wav');
-  loop3 = loadSound('assets/loop3.wav');
-  kick1 = loadSound('assets/kick1.wav');
-  kick2 = loadSound('assets/kick2.wav');
-  kick3 = loadSound('assets/kick3.wav');
-  hatz1 = loadSound('assets/hatz1.wav');
-  hatz2 = loadSound('assets/hatz2.wav');
-  hatz3 = loadSound('assets/hatz3.wav');
-  cymbz1 = loadSound('assets/cymbalz1.wav');
-  cymbz2 = loadSound('assets/cymbalz2.wav');
-  cymbz3 = loadSound('assets/cymbalz3.wav');
-  crash1 = loadSound('assets/crash1.wav');
-  crash2 = loadSound('assets/crash2.wav');
-  crash3 = loadSound('assets/crash3.wav');
-  eight0eight1 = loadSound('assets/8081.wav');
-  eight0eight2 = loadSound('assets/8082.wav');
-  eight0eight3 = loadSound('assets/8083.wav');
+  snare1 = loadSound(`assets/snare1.wav`);
+  snare2 = loadSound(`assets/snare1.wav`);
+  snare3 = loadSound(`assets/snare3.wav`);
+  loop1 = loadSound(`assets/loop1.wav`);
+  loop2 = loadSound(`assets/loop2.wav`);
+  loop3 = loadSound(`assets/loop3.wav`);
+  kick1 = loadSound(`assets/kick1.wav`);
+  kick2 = loadSound(`assets/kick2.wav`);
+  kick3 = loadSound(`assets/kick3.wav`);
+  hatz1 = loadSound(`assets/hatz1.wav`);
+  hatz2 = loadSound(`assets/hatz2.wav`);
+  hatz3 = loadSound(`assets/hatz3.wav`);
+  cymbz1 = loadSound(`assets/cymbalz1.wav`);
+  cymbz2 = loadSound(`assets/cymbalz2.wav`);
+  cymbz3 = loadSound(`assets/cymbalz3.wav`);
+  crash1 = loadSound(`assets/crash1.wav`);
+  crash2 = loadSound(`assets/crash2.wav`);
+  crash3 = loadSound(`assets/crash3.wav`);
+  eight0eight1 = loadSound(`assets/8081.wav`);
+  eight0eight2 = loadSound(`assets/8082.wav`);
+  eight0eight3 = loadSound(`assets/8083.wav`);
   font = loadFont("assets/dosis.ttf");
 
 }
@@ -203,7 +203,7 @@ function setup() {
   rectMode(CENTER); 
   textFont(font);
   textSize(20);
-  text("Once you click a button, your song will automatically start recording. Simply toggle the different buttons to play different sounds and create your own music. When you're finished, press the 'Stop Recording' button and your song will be saved!", width/2, height/1.5, 650, 200);
+  text("Once you click a button, your song will automatically start recording. Simply toggle the different buttons to play different sounds and create your own music. When you`re finished, press the `Stop Recording` button and your song will be saved!", width/2, height/1.5, 650, 200);
 
 }
 
@@ -217,7 +217,7 @@ function mousePressed() {
 
 function stop() {
   recorder.stop(); // stop recorder, and send the result to soundFile
-  saveSound(soundFile, 'mySong.wav'); // save file
+  saveSound(soundFile, `mySong.wav`); // save file
 }
 
 function snare1P() {
