@@ -1,8 +1,8 @@
 window.onload = function() {
-  
+
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
-  
+
   file.onchange = function() {
     var files = this.files;
     audio.src = URL.createObjectURL(files[0]);
@@ -16,9 +16,6 @@ window.onload = function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     var ctx = canvas.getContext("2d");
-
-    var img1=new Image();
-    img1.src="images/try2.jpg";
 
     src.connect(analyser);
     analyser.connect(context.destination);
@@ -44,16 +41,15 @@ window.onload = function() {
 
       analyser.getByteFrequencyData(dataArray);
 
-      pattern1=ctx.createPattern(img1,'repeat');
-      ctx.fillStyle = pattern1;
+      ctx.fillStyle = "#000";
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (var i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
-        
-        var b = barHeight + (25 * (i/bufferLength));
-        var g = 50 * (i/bufferLength);
-        var r = 50;
+
+        var r = barHeight + (25 * (i/bufferLength));
+        var g = 250 * (i/bufferLength);
+        var b = 50;
 
         ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
