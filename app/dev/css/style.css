@@ -26,6 +26,7 @@ h1 {
 }
 
 iframe {
+border: 2px solid #000;
 margin-left: 15%;
 }
 
