@@ -1,7 +1,7 @@
 window.onload = function () {
   var file = document.getElementById("thefile");
   var audio = document.getElementById("audio");
-  let recorder, soundFile, font;
+  var recorder, soundFile, font;
   var button1;
   var button2;
   var button3;
